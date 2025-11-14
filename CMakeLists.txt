@@ -9,4 +9,6 @@ add_executable(advent_of_code
         2024/cpp/day_12.cpp
         2024/cpp/day_13.cpp
         2024/cpp/day_09.cpp
+        2024/cpp/day_14.cpp
+        template.cpp
 )
