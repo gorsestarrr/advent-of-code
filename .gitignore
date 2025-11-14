@@ -1,0 +1,69 @@
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+.wheels/
+.env
+.venv
+env/
+venv/
+*.log
+*.sqlite3
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtualenv / Poetry / Pipenv
+.poetry/
+.pipenv/
+Pipfile.lock
+
+# --------------------
+# C++
+# --------------------
+# Build artifacts
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.exe
+*.out
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+
+# --------------------
+# IDE / Editor files
+# --------------------
+# VSCode
+.vscode/
+
+# CLion / JetBrains
+.idea/
+
+# Others
+*.swp
+*.swo
+*~
+tags
+
+.DS_Store
