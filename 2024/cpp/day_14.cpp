@@ -40,6 +40,25 @@ int countQuadrant(int sw, int ew, int sh, int eh,  vector<vector<int>> amounts) 
     return result;
 }
 
+bool part2(const vector<vector<int>>& amounts) {
+    int n = amounts.size();
+    int m = amounts[0].size();
+    for (int i = 0; i < n; ++i) {
+        int cur = 0;
+        for (int j = 0; j < m; ++j) {
+            if (amounts[i][j] != 0) {
+                ++cur;
+                if (cur >= 10) {
+                    return true;
+                }
+            } else {
+                cur = 0;
+            }
+        }
+    }
+    return false;
+}
+
 void print(const vector<vector<int>>& amounts) {
     cout << "---------------------------------------------------" << endl;
     int n = amounts.size();
@@ -79,7 +98,7 @@ int main() {
 
     const int W = 101;
     const int H = 103;
-    const int seconds = 1000;
+    const int seconds = W * H;
 
     for (int i = 0; i < seconds; ++i) {
         for (auto& robot: robots) {
@@ -92,8 +111,10 @@ int main() {
         for (const auto& robot: robots) {
             amounts[robot.pos.x][robot.pos.y]++;
         }
-        print(amounts);
-        std::this_thread::sleep_for(std::chrono::seconds(1));
+        if (part2(amounts)) {
+            cout << i + 1;
+            return 0;
+        }
     }
     return 0;
 }
