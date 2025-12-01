@@ -12,4 +12,5 @@ add_executable(advent_of_code
         2024/cpp/day_09.cpp
         2024/cpp/day_14.cpp
         2024/cpp/day_15.cpp
+        2025/day_01.cpp
 )
