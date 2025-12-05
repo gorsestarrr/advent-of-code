@@ -34,7 +34,7 @@ ull part2(vector<Range> ranges) {
             result += range.end - range.start + 1;
             prevEnd = range.end;
         }
-        else if (range.start < prevEnd && range.end > prevEnd) {
+        else if (range.start <= prevEnd && range.end > prevEnd) {
             result += range.end - prevEnd;
             prevEnd = range.end;
         }
