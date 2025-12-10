@@ -21,4 +21,5 @@ add_executable(advent_of_code
         2025/day_07.cpp
         2025/day_08.cpp
         2025/day_09.cpp
+        2025/day_10.cpp
 )
