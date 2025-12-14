@@ -22,4 +22,6 @@ add_executable(advent_of_code
         2025/cpp/day_08.cpp
         2025/cpp/day_09.cpp
         2025/cpp/day_10.cpp
+        2015/cpp/day_01.cpp
+        2015/cpp/day_02.cpp
 )
