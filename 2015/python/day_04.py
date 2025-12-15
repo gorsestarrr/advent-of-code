@@ -9,5 +9,5 @@ def solve(s, search_for):
     return None
 
 if __name__ == '__main__':
-    print(solve("bgvyzdsv", "00000"))
-    print(solve("bgvyzdsv", "000000"))
+    print(solve("bg", "00000"))
+    print(solve("bg", "000000"))
