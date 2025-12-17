@@ -30,4 +30,6 @@ add_executable(advent_of_code
         2015/cpp/day_06.cpp
         2015/cpp/day_08.cpp
         2015/cpp/day_10.cpp
+        2015/cpp/day_11.cpp
+        2015/cpp/day_11.cpp
 )
